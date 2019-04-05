@@ -82,5 +82,8 @@ namespace NzbDrone.Core.Configuration
         string BackupFolder { get; }
         int BackupInterval { get; }
         int BackupRetention { get; }
+
+        // Scripts
+        string ScriptFolder { get; }
     }
 }

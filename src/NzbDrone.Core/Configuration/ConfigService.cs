@@ -345,6 +345,8 @@ namespace NzbDrone.Core.Configuration
 
         public int BackupRetention => GetValueInt("BackupRetention", 28);
 
+        public string ScriptFolder => GetValue("ScriptFolder", "Scripts");
+
         private string GetValue(string key)
         {
             return GetValue(key, string.Empty);

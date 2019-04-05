@@ -37,6 +37,7 @@ namespace Sonarr.Api.V3.Config
         public string BackupFolder { get; set; }
         public int BackupInterval { get; set; }
         public int BackupRetention { get; set; }
+        public string ScriptFolder { get; set; }
     }
 
     public static class HostConfigResourceMapper
@@ -74,7 +75,8 @@ namespace Sonarr.Api.V3.Config
                 ProxyBypassLocalAddresses = configService.ProxyBypassLocalAddresses,
                 BackupFolder = configService.BackupFolder,
                 BackupInterval = configService.BackupInterval,
-                BackupRetention = configService.BackupRetention
+                BackupRetention = configService.BackupRetention,
+                ScriptFolder = configService.ScriptFolder,
             };
         }
     }
